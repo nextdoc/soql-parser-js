@@ -326,3 +326,10 @@ docs-old
 # Claude Code
 .claude/worktrees
 .claude/settings.local.json
+
+# Pre-built artifacts shipped on this branch for buildless GitHub-dependency consumption
+!dist/
+!dist/lwc/
+!dist/lwc/**
+!dist/types/
+!dist/types/**

@@ -1,0 +1,9 @@
+import { Query } from '../api/api-models';
+export interface ParseQueryConfig {
+    allowPartialQuery?: boolean;
+    allowApexBindVariables?: boolean;
+    ignoreParseErrors?: boolean;
+    logErrors?: boolean;
+}
+export declare function parseQuery(soql: string, options?: ParseQueryConfig): Query;
+export declare function isQueryValid(soql: string, options?: ParseQueryConfig): boolean;
